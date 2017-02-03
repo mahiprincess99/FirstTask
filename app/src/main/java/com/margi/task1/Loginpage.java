@@ -17,8 +17,6 @@ import android.widget.Toast;
 public class Loginpage extends Fragment
 
 {
-    private Button btnSubmit;
-    EditText uname,password;
 
     @Nullable
     @Override
@@ -26,23 +24,23 @@ public class Loginpage extends Fragment
 
 
         View view = inflater.inflate(R.layout.login_fragment, container, false);
-        btnSubmit=(Button)view.findViewById(R.id.btnSubmit);
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Loginpage s = new Loginpage();
-                getFragmentManager().beginTransaction().replace(R.id.linear_main,s).addToBackStack("").commit();
-               // android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-               // fragmentTransaction.replace(R.id.linear_main, fragment1);
-                //.addToBackStack("");
-               // fragmentTransaction.commit();
-
-                //Go to next
-                getFragmentManager().popBackStack();
-
-            }
-        });
+//        btnSubmit=(Button)view.findViewById(R.id.btnSubmit);
+//        btnSubmit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Loginpage s = new Loginpage();
+//                getFragmentManager().beginTransaction().replace(R.id.linear_main,s).addToBackStack("").commit();
+//               // android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//               // fragmentTransaction.replace(R.id.linear_main, fragment1);
+//                //.addToBackStack("");
+//               // fragmentTransaction.commit();
+//
+//                //Go to next
+//                getFragmentManager().popBackStack();
+//
+//            }
+//        });
         return view;
 
 
